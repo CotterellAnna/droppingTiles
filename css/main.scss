@@ -15,6 +15,10 @@ body{
         background: white;
         padding: 20px;
         text-align: center;
+        audio{
+            z-index: 1;
+            float: right;
+        }
     }
     .droppingBoxes{
         display: flex;
