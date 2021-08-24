@@ -1,0 +1,195 @@
+body {
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+body h1 {
+  z-index: 2;
+  position: relative;
+  top: 0;
+  margin: 0px;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body .droppingBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .droppingBoxes .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  height: 200px;
+  width: 150px;
+  -webkit-transition: width .35s ease-in-out,  height .35s ease-in-out;
+  transition: width .35s ease-in-out,  height .35s ease-in-out;
+  margin-top: -300px;
+  -webkit-animation-name: drop;
+          animation-name: drop;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-direction: linear;
+          animation-direction: linear;
+  border: 2px solid black;
+  font-size: 50px;
+}
+
+body .droppingBoxes .box:focus {
+  width: 0px;
+  height: 0px;
+}
+
+body .droppingBoxes .box--one {
+  margin-left: 10px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  background: #121219;
+}
+
+body .droppingBoxes .box--one i {
+  color: white;
+}
+
+body .droppingBoxes .box--two {
+  margin-left: 10px;
+  -webkit-animation-delay: 0.01s;
+          animation-delay: 0.01s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  background: white;
+}
+
+body .droppingBoxes .box--two i {
+  color: #121219;
+}
+
+body .droppingBoxes .box--three {
+  margin-left: 10px;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 4.3s;
+          animation-duration: 4.3s;
+  background: #121219;
+}
+
+body .droppingBoxes .box--three i {
+  color: white;
+}
+
+body .droppingBoxes .box--four {
+  margin-left: 10px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-duration: 4.2s;
+          animation-duration: 4.2s;
+  background: white;
+  margin-right: 10px;
+}
+
+body .droppingBoxes .box--four i {
+  color: #121219;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    bottom: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+    border-radius: 200px;
+  }
+}
+
+@keyframes drop {
+  0% {
+    bottom: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+    border-radius: 200px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    overflow: hidden;
+    background-position: 20%;
+  }
+  body .droppingBoxes .box {
+    height: 50px;
+    width: 70px;
+    font-size: 25px;
+  }
+  body .droppingBoxes .box:hover, body .droppingBoxes .box :focus {
+    width: 0px;
+    height: 0px;
+  }
+  body .droppingBoxes .box--one {
+    -webkit-animation-duration: 5.8s;
+            animation-duration: 5.8s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  body .droppingBoxes .box--two {
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+  body .droppingBoxes .box--three {
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  body .droppingBoxes .box--four {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  @-webkit-keyframes drop {
+    0% {
+      bottom: 100%;
+    }
+    100% {
+      -webkit-transform: translateY(1900%);
+              transform: translateY(1900%);
+      border-radius: 50px;
+    }
+  }
+  @keyframes drop {
+    0% {
+      bottom: 100%;
+    }
+    100% {
+      -webkit-transform: translateY(1900%);
+              transform: translateY(1900%);
+      border-radius: 50px;
+    }
+  }
+}
+/*# sourceMappingURL=main.css.map */
